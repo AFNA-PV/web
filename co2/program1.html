@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function dname(){
+            var name=document.getElementById("name").value;
+            document.write("The name is:"+name+"<br>")
+            document.write("The length is:"+name.length+"<br>")
+
+        }
+        function maths(){
+            var a=document.getElementById("num").value;
+            document.write("Round Min:"+Math.round(a)+"<br>")
+
+        }
+        function power(){
+            var a=document.getElementById("a").value;
+            var b=document.getElementById("b").value;
+            document.write("Power is:"+Math.pow(a,b)+"<br>")
+
+        }
+        function pi(){
+            document.write("PI:"+Math.PI+"<br>")
+        }
+    </script>
+</head>
+<body>
+    <h1>string function</h1>
+    <form>
+        Enter name:<input type="text" id="name" name="name"><br>
+        <input type="button" onclick="dname()" value="submit"><br>
+        </form>
+        <h2>maths function</h2>
+        <form>
+            <input type="button" value="Display PI" onclick="pi()"><br>
+        </form>
+        <p><b>Round function</b></p>
+
+        <form>
+            Enter a number:<input type="number" id="num" name="num"><br>
+            <input type="button" onclick="maths()" value="submit"><br>
+            </form>
+            <p><b>Power function</b></p>
+            <form>
+                Enter a:<input type="text" id="a" name="a"><br>
+                Enter b:<input type="text" id="b" name="b"><br>
+                <input type="button" onclick="power()" value="submit"><br>
+                </form>
+</body>
+</html>
